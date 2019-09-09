@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/side_nav_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/personprof"
+        app:cardCornerRadius="7dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="#e0eee0"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Personal Profile!!"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="1/4"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="#fff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/FirstName"
+                        android:layout_marginRight="5dp"
+                        android:hint="First Name"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/SecondName"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:hint="Second Name"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/FathersName"
+                        android:hint="Father's Name"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/MothersName"
+                        android:layout_marginRight="5dp"
+                        android:hint="Mothers Name"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/DOB"
+                        android:layout_marginRight="5dp"
+                        android:hint="Date Of Birth"
+                        android:focusable="false"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Gender"
+                        android:hint="Gender"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/MaritalStatus"
+                        android:hint="Marital Status"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/SpouseWorking"
+                        android:hint="If Spouse ? Working or not?"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/SpouseCompany"
+                        android:hint="If Yes, Spouse Company?"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Email"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/HighestEducation"
+                        android:hint="Highest Education"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Institute"
+                        android:hint="Institute Name"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Submit"
+                    android:onClick="SubmitPersonal"
+                    android:textColor="#000"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="#e0eee0"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

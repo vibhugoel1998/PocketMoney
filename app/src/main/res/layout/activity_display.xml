@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_nav_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/personalprof"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="270dp"
+                android:orientation="vertical"
+                android:layout_height="250dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/face"
+                    android:layout_height="150dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/Linearofpersonal"
+                    android:orientation="vertical"
+                    android:background="#fff"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textSize="20dp"
+                        android:text="Personal Profile"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Help us know you better"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="5dp"
+            android:id="@+id/professionalprof"
+            app:cardMaxElevation="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="270dp"
+                android:orientation="vertical"
+                android:layout_height="250dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/laptop"
+                    android:layout_height="150dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/linearofprofessional"
+                    android:orientation="vertical"
+                    android:background="#fff"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textSize="20dp"
+                        android:text="Professional Profile"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Tell us what you are upto"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp"
+                android:id="@+id/CurrentAddress"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:orientation="vertical"
+                    android:layout_height="250dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home"
+                        android:layout_height="150dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/linearofresidential"
+                        android:background="#fff"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="20dp"
+                            android:text="Residential Address"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="How can we reach out to you"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:layout_height="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp"
+                android:id="@+id/ProfPicture"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:orientation="vertical"
+                    android:layout_height="250dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/profpicture"
+                        android:layout_height="150dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/linearofpicture"
+                        android:background="#fff"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="20dp"
+                            android:text="Profile Picture"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Let's get that pretty face up"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:layout_height="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp"
+                android:id="@+id/Documents"
+                android:onClick="PaymentDocuments"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:orientation="vertical"
+                    android:layout_height="250dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/uploaddoc"
+                        android:layout_height="150dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/linearofdocuments"
+                        android:background="#fff"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="20dp"
+                            android:text="Upload Documents"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Upload the documents to be approved."
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:layout_height="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:text="Your Profile!!"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:fontFamily="casual"
+        android:text="Lets take a moment to complete it"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

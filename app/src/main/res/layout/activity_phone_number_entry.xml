@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Let's get started!"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="casual"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:text="Enter your Mobile Number"
+        android:textColor="#000"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="1/1"
+        android:fontFamily="casual"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/smartphone"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Enter your registered mobile number, or the number with which you would like to register with us."
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="+91"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:id="@+id/mobileEditText"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:hint="Mobile Number"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.eyalbira.loadingdots.LoadingDots
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/otploadingdots"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp"
+        app:LoadingDots_auto_play="true"
+        app:LoadingDots_dots_color="@color/colorPrimaryDark"
+        app:LoadingDots_dots_count="4"
+        app:LoadingDots_dots_size="10dp"
+        app:LoadingDots_dots_space="1dp"
+        app:LoadingDots_loop_duration="800"
+        app:LoadingDots_loop_start_delay="100"
+        app:LoadingDots_jump_duration="200"
+        app:LoadingDots_jump_height="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@drawable/side_nav_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_height="70dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/personprof"
+                app:cardCornerRadius="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Get OTP"
+                    android:onClick="GetOtpOnMobile"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:id="@+id/OtpText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

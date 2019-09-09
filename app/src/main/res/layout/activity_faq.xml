@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_nav_bar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:onClick="doFinish7"
+            android:src="@drawable/back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="FAQs"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:background="#ffca18"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:onClick="OpenDocsRequired"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:text="Documents required and their acceptable formats"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:id="@+id/DocReq"
+                android:layout_height="0dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:background="#ffca18"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:onClick="OpenDocsRequired2"
+                android:fontFamily="casual"
+                android:text="Application Process, Cost and Timelines"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:id="@+id/DocReq2"
+                android:layout_height="0dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:background="#ffca18"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:onClick="OpenDocsRequired3"
+                android:text="Repayment Process"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:id="@+id/DocReq3"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

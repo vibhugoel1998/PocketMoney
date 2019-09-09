@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/semi_circ"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImage"
+        android:layout_marginTop="30dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/user"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#fff"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:text="Hey!" />
+</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="OpenViewAndEditProfile"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/viewandeditimage"
+                android:src="@drawable/document"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="View and Edit Profile"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="OpenLoanCalculator"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/cash"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:text="Loan Calculator"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="doAutoPayment"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/calendar"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Auto Payment"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:onClick="LoanStatement"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/note"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:text="Loan Statement"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="ReferandEarn"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/group"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Refer and earn"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:onClick="OpenFaq"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/networking"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="FAQs"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="OpenHelp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/info"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Help"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="OpenAboutUs"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/digital"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="About Us"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/advice"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Rate Us"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="DoLogout"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/logout"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:text="Logout"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

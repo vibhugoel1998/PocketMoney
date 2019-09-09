@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_nav_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/side_nav_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="20dp"
+        android:onClick="doFinish"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#f6f5fa"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="First Name"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Not Given"
+                android:layout_marginTop="3dp"
+                android:id="@+id/viewFirstName"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#f6f5fa"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Second Name"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Not Given"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/viewSecondName"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f6f5fa"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Customer ID"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Not Given"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:id="@+id/viewCustomerID"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/copy"
+                android:onClick="CopyUID"
+                android:background="#f6f5fa"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f6f5fa"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Mobile No."
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Not Given"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:id="@+id/viewMobileNo"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:background="#f6f5fa"
+                android:onClick="ChangeMobile"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f6f5fa"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Email ID."
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Not Given"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/viewEmailID"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:background="#f6f5fa"
+                android:onClick="OpenEditEmail"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#f6f5fa"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Current Address"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Not Given"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/viewCurrentAddress"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#f6f5fa"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Company Details"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Not Given"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/viewCompanyDetails"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#f6f5fa"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Bank Details"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Not Given"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:id="@+id/ViewBankDetails"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="casual"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

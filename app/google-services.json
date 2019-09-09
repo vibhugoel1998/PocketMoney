@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "278680817891",
+    "firebase_url": "https://pocketmoney-dcd49.firebaseio.com",
+    "project_id": "pocketmoney-dcd49",
+    "storage_bucket": "pocketmoney-dcd49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278680817891:android:4a358ae8a8d2b712",
+        "android_client_info": {
+          "package_name": "com.example.vibhu.pocketmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278680817891-3aalnnp16o8l4teve8atcgme8vds3jbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vibhu.pocketmoney",
+            "certificate_hash": "34297e5f53951cbacd2b37741b7ae5f2c13dd96b"
+          }
+        },
+        {
+          "client_id": "278680817891-sanrngq737kddm7q4gm2hg8la5j4i05p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7zAe7jsMhlfDFe4aTbFiKHl5WVmHjX10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278680817891-sanrngq737kddm7q4gm2hg8la5j4i05p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

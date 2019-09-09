@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/side_nav_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/personalprof"
+        app:cardCornerRadius="7dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="#e0eee0"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Residential Details!!"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="3/4"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="#fff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/HouseType"
+                        android:layout_marginRight="5dp"
+                        android:hint="House Type"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/DoorNo"
+                        android:layout_marginRight="5dp"
+                        android:hint="Door No.,Wing and Building Name"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Streetname"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:hint="Street Name and Locality"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Landmark"
+                        android:hint="Landmark"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/City"
+                        android:layout_marginRight="5dp"
+                        android:hint="City"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/State"
+                        android:layout_marginRight="5dp"
+                        android:hint="State"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/PinCode"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/ResidentialType"
+                        android:hint="Residential Type"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Reference1Name"
+                        android:layout_marginRight="5dp"
+                        android:hint="Neighbour Reference 1 Name"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Reference1House"
+                        android:layout_marginRight="5dp"
+                        android:hint="Neighbour Reference 1 House No."
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Reference1Mobile"
+                        android:layout_marginRight="5dp"
+                        android:hint="Neighbour Reference 1 Mobile No."
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Reference2Name"
+                        android:layout_marginRight="5dp"
+                        android:hint="Neighbour Reference 2 Name"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Reference2House"
+                        android:layout_marginRight="5dp"
+                        android:hint="Neighbour Reference 2 House No."
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/Reference2Mobile"
+                        android:layout_marginRight="5dp"
+                        android:hint="Neighbour Reference 2 Mobile No."
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Submit"
+                    android:textColor="#000"
+                    android:onClick="SaveAddress"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#e0eee0"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</FrameLayout>
